@@ -43,7 +43,7 @@ export default function Tokenomics() {
           poster='/video-poster.png'
           className='absolute inset-0 size-full rounded-[2.3rem] object-cover'
         >
-          <source src='/video-0.mp4' type='video/mp4' />
+          <source src='/video.mp4' type='video/mp4' />
         </video>
         <Image
           src={ivanImg}
@@ -59,6 +59,18 @@ export default function Tokenomics() {
             'space-y-10'
           )}
         >
+          <img
+            src='/edge.svg'
+            alt=''
+            className='absolute -left-2 -top-2 sm:multi-[w-24;-left-5;-top-10]'
+          />
+          <div className=''>
+            <img
+              src='/edge.svg'
+              alt=''
+              className='absolute -right-2  -top-2 -scale-x-100 sm:multi-[w-24;-right-5;-top-10]'
+            />
+          </div>
           <article>
             <p>
               Symbol: <span>pavlov</span>
