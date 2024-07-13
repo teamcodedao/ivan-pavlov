@@ -9,7 +9,14 @@ import ivanImg from './ivan-1.png';
 export default function Hero() {
   return (
     <div className='relative'>
-      <Image src={heroImg} priority alt='' fill className='object-cover' />
+      <Image
+        src={heroImg}
+        priority
+        alt=''
+        fill
+        placeholder='blur'
+        className='object-cover'
+      />
       <div
         className={clsx(
           'relative mx-auto max-w-screen-3xl overflow-hidden px-5',

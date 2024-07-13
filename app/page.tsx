@@ -17,6 +17,7 @@ export default function Home() {
           priority
           fill
           alt=''
+          placeholder='blur'
           className='object-cover'
         />
         <main className='py-10 lg:py-20'>
