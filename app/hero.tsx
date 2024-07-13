@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import clsx from 'clsx';
+import MovingComponent from 'react-moving-text';
 
 import SocialButtonProps from './social-button';
 
@@ -48,10 +51,24 @@ export default function Hero() {
           className={clsx(
             '[--stroke:3px] lg:[--stroke:5px]',
             'mt-10',
-            'text-center text-8xl uppercase [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]'
+            'text-center text-8xl uppercase [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]',
+            'flex justify-center gap-x-2'
           )}
         >
-          Ivan Petrovich Pavlov
+          {'Ivan Petrovich Pavlov'.split('').map((letter, index) => (
+            <MovingComponent
+              key={index}
+              type='blur'
+              duration='2500ms'
+              delay={`${index * 200}ms`}
+              direction='normal'
+              timing='ease'
+              iteration='infinite'
+              fillMode='none'
+            >
+              {letter}
+            </MovingComponent>
+          ))}
         </h1>
         <div className='relative flex justify-center'>
           <Image src={ivanImg} quality={100} priority alt='' />
