@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Hero from './hero';
 import About from './about';
 import Roadmap from './roadmap';
+import Tokenomics from './tokenomics';
 
 import backgroundImg from './background.jpeg';
 
@@ -22,6 +23,7 @@ export default function Home() {
           <div className='relative mx-auto max-w-screen-3xl overflow-hidden px-5'>
             <About />
             <Roadmap />
+            <Tokenomics />
           </div>
         </main>
       </div>

@@ -41,7 +41,7 @@ export default function Hero() {
           className={clsx(
             '[--stroke:3px] lg:[--stroke:5px]',
             'mt-10',
-            'text-center text-8xl [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]'
+            'text-center text-8xl uppercase [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]'
           )}
         >
           Ivan Petrovich Pavlov
