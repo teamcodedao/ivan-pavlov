@@ -51,24 +51,32 @@ export default function Hero() {
           className={clsx(
             '[--stroke:3px] lg:[--stroke:5px]',
             'mt-10',
-            'text-center text-8xl uppercase [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]',
-            'flex justify-center gap-x-2'
+            'text-center text-8xl uppercase [-webkit-text-stroke:var(--stroke)_white] lg:text-9xl 3xl:text-[170px]'
           )}
         >
-          {'Ivan Petrovich Pavlov'.split('').map((letter, index) => (
-            <MovingComponent
-              key={index}
-              type='blur'
-              duration='2500ms'
-              delay={`${index * 200}ms`}
-              direction='normal'
-              timing='ease'
-              iteration='infinite'
-              fillMode='none'
-            >
-              {letter}
-            </MovingComponent>
-          ))}
+          <div className='flex flex-wrap justify-center text-balance max-[840px]:multi-[`hidden;[&+span]:block`]'>
+            {'Ivan Petrovich Pavlov'.split('').map((letter, index) => {
+              if (' ' === letter) {
+                return <div key={index} className='h-px w-5'></div>;
+              }
+
+              return (
+                <MovingComponent
+                  key={index}
+                  type='blur'
+                  duration='2500ms'
+                  delay={`${index * 200}ms`}
+                  direction='normal'
+                  timing='ease'
+                  iteration='infinite'
+                  fillMode='none'
+                >
+                  {letter}
+                </MovingComponent>
+              );
+            })}
+          </div>
+          <span className='hidden'>Ivan Petrovich Pavlov</span>
         </h1>
         <div className='relative flex justify-center'>
           <Image src={ivanImg} quality={100} priority alt='' />
