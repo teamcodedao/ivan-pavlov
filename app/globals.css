@@ -11,3 +11,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .text-heading {
+    @apply text-black font-nerko-one [-webkit-text-stroke:var(--stroke)_#FFF0F0] [letter-spacing:6px];
+    @apply text-7xl sm:text-8xl lg:text-9xl 2xl:text-[150px];
+    @apply [--stroke:4px] lg:[--stroke:8px];
+  }
+}

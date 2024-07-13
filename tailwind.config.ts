@@ -13,6 +13,7 @@ const config: Config = {
       },
       fontFamily: {
         macondo: 'var(--macondo-font)',
+        'nerko-one': 'var(--nerko-one-font)',
       },
       colors: {
         primary: '#CE8E11',
