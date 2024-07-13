@@ -24,6 +24,15 @@ export default function Home() {
             <About />
             <Roadmap />
             <Tokenomics />
+            <footer className='mt-10 flex justify-center'>
+              <a
+                href={process.env.NEXT_PUBLIC_COIN_URL}
+                target='_buy'
+                className='text-shadow rounded-[27px] border-4 border-black bg-secondary px-10 py-3 text-[64px] transition hover:multi-[bg-primary;text-white] max-[420px]:multi-[px-8;py-2;text-[3.5rem];rounded-3xl]'
+              >
+                Buy $PAVLOV
+              </a>
+            </footer>
           </div>
         </main>
       </div>
