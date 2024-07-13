@@ -11,6 +11,9 @@ const config: Config = {
       screens: {
         '3xl': '1665px',
       },
+      fontFamily: {
+        macondo: 'var(--macondo-font)',
+      },
       colors: {
         primary: '#CE8E11',
         secondary: '#F3E17F',
