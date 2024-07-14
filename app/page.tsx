@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import clsx from 'clsx';
 
 import Hero from './hero';
 import About from './about';
@@ -29,7 +30,11 @@ export default function Home() {
               <a
                 href={process.env.NEXT_PUBLIC_COIN_URL}
                 target='_buy'
-                className='text-shadow rounded-[27px] border-4 border-black bg-secondary px-10 py-3 text-[64px] transition hover:multi-[bg-primary;text-white] max-[420px]:multi-[px-8;py-2;text-[3.5rem];rounded-3xl]'
+                className={clsx(
+                  'text-shadow border-4 border-black bg-secondary transition hover:multi-[bg-primary;text-white]',
+                  'sm:multi-[px-10;py-3;text-[64px];rounded-[27px]]',
+                  'rounded-3xl px-8 py-0 text-[3.5rem]'
+                )}
               >
                 Buy $PAVLOV
               </a>

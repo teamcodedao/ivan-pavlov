@@ -19,10 +19,10 @@ export default function SocialButton({
       className={clsx(
         className,
         'bg-[#D9D9D9] transition',
-        'max-[451px]:basis-full',
+        'max-[373px]:basis-full',
         'flex items-center',
-        'gap-x-3 px-3 py-2 sm:gap-x-5',
-        'text-4xl sm:text-5xl lg:multi-[text-[57px];py-1]',
+        'gap-x-1 px-2 py-1 sm:multi-[gap-x-3;px-3;py-2] md:gap-x-5',
+        'text-3xl sm:text-4xl md:text-5xl lg:multi-[text-[57px];py-1]',
         'hover:multi-[`transition-all;bg-primary;text-white;[--blend:normal];[&_img]:[mix-blend-mode:var(--blend,normal)]`]',
         {
           '[--blend:difference]': variant === 'blend',
